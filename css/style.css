@@ -24,13 +24,122 @@
 }
 
 :root {
-
+  --basik-black: #000000;
+  --basik-gray: #EEEEEE;
+  --basik-white: 255, 255, 255;
+  --basik-dark-gray: #283136;
+  --basik-red: #FB565A;
+  --red-hover: #E74246;
+  --red-click: #D7373B;
+  --basik-green: #00CA74;
+  --green-hover: #00BC6C;
+  --green-click: #00AA62;
+  --basik-yellow: #EFC849;
+  --yellow-hover: #EAB534;
+  --yellow-click: #E5A722;
+  --gray-address: #666666;
+  --gray-icons: #E1E1E1;
+  --gray-discount: #444444;
+  --gray-cart: #A6A6A6;
+  --gray-form: #D7DCDE;
+  --gray-hover: #B4B9BB;
+  --gray-button: #DFDFDF;
+  --gray-click: #D5D5D5;
+  --gray-active :#DBDBDB;
+  --gray-radio: #4D4D4D;
 }
 
 .page-body {
-  font-family: "Roboto";
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 500;
-
-
-
+  color: var(--basik-black);
+  background-color: var(--basik-white);
 }
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header {
+  background-color: var(--basik-gray);
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a,
+.header-basket {
+  color: var(--basik-black);
+}
+
+.site-navigation a:hover,
+.header-basket:hover {
+  color: var(--basik-red);
+}
+
+.site-navigation a:active,
+.header-basket:active {
+  color: var(--basik-black);
+  opacity: 30%;
+}
+
+/* Sliders */
+
+.main-slider {
+  background-color: var(--basik-gray);
+  color: var(--basik-black);
+}
+
+.slider-title {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-text {
+  color: var(--basik-dark-gray);
+}
+
+.button {
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basik-white);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.button-red {
+  background-color: var(--basik-red);
+}
+
+.button-red:hover {
+  background-color: var(--red-hover);
+}
+
+.button-red:active {
+  background-color: var(--red-click);
+  /* color: var(--basik-white, 0.3); */
+  color: rgba(var(--basik-white), 0.3);
+}
+
+
+

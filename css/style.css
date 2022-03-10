@@ -26,7 +26,7 @@
 :root {
   --basik-black: #000000;
   --basik-gray: #EEEEEE;
-  --basik-white: 255, 255, 255;
+  --basik-white: #FFFFFF;
   --basik-dark-gray: #283136;
   --basik-red: #FB565A;
   --red-hover: #E74246;
@@ -47,6 +47,7 @@
   --gray-click: #D5D5D5;
   --gray-active :#DBDBDB;
   --gray-radio: #4D4D4D;
+  --opacity-white: 255, 255, 255;
 }
 
 .page-body {
@@ -137,8 +138,7 @@ img {
 
 .button-red:active {
   background-color: var(--red-click);
-  /* color: var(--basik-white, 0.3); */
-  color: rgba(var(--basik-white), 0.3);
+  color: rgba(var(--opacity-white), 0.3);
 }
 
 

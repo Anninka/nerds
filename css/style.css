@@ -25,28 +25,28 @@
 
 :root {
   --basik-black: #000000;
-  --basik-gray: #EEEEEE;
-  --basik-white: #FFFFFF;
-  --basik-dark-gray: #283136;
-  --basik-red: #FB565A;
-  --red-hover: #E74246;
-  --red-click: #D7373B;
-  --basik-green: #00CA74;
-  --green-hover: #00BC6C;
-  --green-click: #00AA62;
-  --basik-yellow: #EFC849;
-  --yellow-hover: #EAB534;
-  --yellow-click: #E5A722;
-  --gray-address: #666666;
-  --gray-icons: #E1E1E1;
-  --gray-discount: #444444;
-  --gray-cart: #A6A6A6;
-  --gray-form: #D7DCDE;
-  --gray-hover: #B4B9BB;
-  --gray-button: #DFDFDF;
-  --gray-click: #D5D5D5;
-  --gray-active :#DBDBDB;
-  --gray-radio: #4D4D4D;
+  --basik-white: #ffffff;
+  --basik-red: #fb565a;
+  --red-hover: #e74246;
+  --red-click: #d7373b;
+  --basik-green: #00ca74;
+  --green-hover: #00bc6c;
+  --green-click: #00aa62;
+  --basik-yellow: #efc849;
+  --yellow-hover: #eab634;
+  --yellow-click: #e5a722;
+  --gray-7: #eeeeee;
+  --gray-12: #e1e1e1;
+  --gray-13: #dfdfdf;
+  --gray-14: #dbdbdb;
+  --gray-15: #d7dcde;
+  --gray-16: #d5d5d5;
+  --gray-28: #b4b9bb;
+  --gray-35: #a6a6a6;
+  --gray-60: #666666;
+  --gray-70: #4d4d4d;
+  --gray-73: #444444;
+  --gray-82: #283136;
   --opacity-white: 255, 255, 255;
 }
 
@@ -72,7 +72,7 @@ img {
 }
 
 .page-header {
-  background-color: var(--basik-gray);
+  background-color: var(--gray-7);
 }
 
 .main-navigation {
@@ -105,7 +105,7 @@ img {
 /* Sliders */
 
 .main-slider {
-  background-color: var(--basik-gray);
+  background-color: var(--gray-7);
   color: var(--basik-black);
 }
 
@@ -115,7 +115,7 @@ img {
 }
 
 .slider-text {
-  color: var(--basik-dark-gray);
+  color: var(--gray-82);
 }
 
 .button {
@@ -139,6 +139,135 @@ img {
 .button-red:active {
   background-color: var(--red-click);
   color: rgba(var(--opacity-white), 0.3);
+}
+
+/* Services */
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services-item p {
+  color: var(--gray-82);
+  font-weight: 400;
+}
+
+.button-green {
+  background-color: var(--basik-green);
+}
+
+.button-green:hover {
+  background-color: var(--green-hover);
+}
+
+.button-green:active {
+  background-color: var(--green-click);
+  color: rgba(var(--opacity-white), 0.3);
+}
+
+.button-yellow {
+  background-color: var(--basik-yellow);
+}
+
+.button-yellow:hover {
+  background-color: var(--yellow-hover);
+}
+
+.button-yellow:active {
+  background-color: var(--yellow-click);
+  color: rgba(var(--opacity-white), 0.3);
+}
+
+/* About us */
+
+.advantages {
+  color: var(--gray-82);
+  font-weight: 400;
+}
+
+.advantages-slogan {
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basik-black);
+  font-weight: 500;
+}
+
+.advantages-caption {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-list {
+  font-weight: 400;
+}
+
+.statistics p {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.statistics dt {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.percent {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.statistics dd {
+  line-height: 18px;
+  color: var(--gray-82);
+  font-weight: 400;
+}
+
+/* Clients */
+
+.clients-list {
+  list-style: none;
+}
+
+/* Contacts & Map */
+
+.contacts-caption {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.address,
+.contacts-tel {
+  line-height: 18px;
+  color: var(--gray-60);
+  font-weight: 400;
+}
+
+/* Footer */
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-slogan {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.footer-text {
+  line-height: 22px;
+  color: var(--gray-73);
+  font-weight: 400;
 }
 
 

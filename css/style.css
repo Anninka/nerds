@@ -374,6 +374,10 @@ img {
   list-style: none;
 }
 
+.design-info {
+  background-color: var(--gray-7);
+}
+
 .design-title {
   font-size: 18px;
   line-height: 30px;

@@ -47,7 +47,11 @@
   --gray-70: #4d4d4d;
   --gray-73: #444444;
   --gray-82: #283136;
+  --gray-87: #231F20;
   --opacity-white: 255, 255, 255;
+  --opacity-black: 0, 0, 0;
+  --opacity-gray: 166, 166, 166;
+  --opacity-button-gray: 0, 1, 1;
 }
 
 .page-body {
@@ -109,7 +113,7 @@ img {
   color: var(--basik-black);
 }
 
-.slider-title {
+.page-title {
   font-size: 55px;
   line-height: 55px;
 }
@@ -119,13 +123,12 @@ img {
 }
 
 .button {
-  width: 160px;
-  height: 50px;
   text-align: center;
   vertical-align: middle;
   color: var(--basik-white);
   line-height: 18px;
   text-transform: uppercase;
+  border-radius: 3px;
 }
 
 .button-red {
@@ -139,6 +142,7 @@ img {
 .button-red:active {
   background-color: var(--red-click);
   color: rgba(var(--opacity-white), 0.3);
+  box-shadow: inset 0px 3px 0px rgba(var(--opacity-button-gray), 0.1);
 }
 
 /* Services */
@@ -170,6 +174,7 @@ img {
 .button-green:active {
   background-color: var(--green-click);
   color: rgba(var(--opacity-white), 0.3);
+  box-shadow: inset 0px 3px 0px rgba(var(--opacity-button-gray), 0.1);
 }
 
 .button-yellow {
@@ -183,6 +188,7 @@ img {
 .button-yellow:active {
   background-color: var(--yellow-click);
   color: rgba(var(--opacity-white), 0.3);
+  box-shadow: inset 0px 3px 0px rgba(var(--opacity-button-gray), 0.1);
 }
 
 /* About us */
@@ -270,5 +276,165 @@ img {
   font-weight: 400;
 }
 
+/* Catalog page */
 
+.filter-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+.from-to-filter {
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--gray-82);
+  text-transform: uppercase;
+}
+
+.filter-points {
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--gray-82);
+}
+
+.button-gray {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--basik-black);
+  background-color: var(--gray-7);
+  border: none;
+}
+
+.button-gray:hover {
+  background-color: var(--gray-13);
+}
+
+.button-gray:active {
+  background-color: var(--gray-16);
+  color: rgba(var(--opacity-black), 0.3);
+  box-shadow: inset 0px 3px 0px rgba(var(--opacity-button-gray), 0.1);
+}
+
+.filter-list {
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sort-by-price {
+  color: var(--basik-black);
+}
+
+.sort-by-type {
+  color: rgba(var(--opacity-black), 0.3);
+}
+
+.sort-by-type:hover {
+  color: rgba(var(--opacity-black), 0.6)
+}
+
+.sort-by-type:active {
+  color: var(--basik-black)
+}
+
+.sort-by-name {
+  color: rgba(var(--opacity-black), 0.3);
+}
+
+.sort-by-name:hover {
+  color: rgba(var(--opacity-black), 0.6)
+}
+
+.sort-by-name:active {
+  color: var(--basik-black)
+}
+
+.sort-down {
+  color: var(--gray-87);
+}
+
+.sort-up {
+  color: rgba(var(--opacity-gray), 0.2)
+}
+
+.sort-up:hover {
+  color: var(--gray-35);
+}
+
+.sort-up:active {
+  color: var(--gray-87);
+}
+
+/* screenshots of designs */
+
+.design-list {
+  list-style: none;
+}
+
+.design-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basik-black);
+}
+
+.design-title:hover {
+  color: var(--basik-red);
+}
+
+.design-title:active {
+  color: rgba(var(--opacity-black), 0.3);
+}
+
+.design-item p {
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--gray-60);
+}
+
+.button-price {
+  background-color: var(--basik-red);
+}
+
+.button-price:hover {
+  background-color: var(--red-hover);
+}
+
+.button-price:active {
+  background-color: var(--red-click);
+  box-shadow: inset 0px 3px 0px rgba(var(--opacity-button-gray), 0.1);
+}
+
+.page-number-list {
+  list-style: none;
+}
+
+.page {
+  border-radius: 3px;
+  line-height: 18px;
+  color: var(--basik-black);
+}
+
+.active-page {
+  border: 3px solid var(--gray-14);
+}
+
+.page-button {
+  color: var(--basik-black);
+  background-color: var(--gray-7);
+  text-transform: uppercase;
+}
+
+.page-button:hover {
+  background-color: var(--gray-13);
+}
+
+.page-button:active {
+  color: rgba(var(--opacity-black), 0.3);
+  background-color: var(--gray-16);
+  box-shadow: inset 0px 3px 0px rgba(var(--opacity-button-gray), 0.1);
+}

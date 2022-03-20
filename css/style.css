@@ -55,7 +55,7 @@
 }
 
 .page-body {
-  min-width: 1440px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -214,16 +214,28 @@ img {
   font-weight: 400;
 }
 
+.statistics {
+  width: 360px;
+}
+
+.statistics dl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px 20px;
+}
+
 .statistics p {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
 }
 
-.statistics dt {
+.statistics dd {
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
+  grid-row: 1 / 2;
+  margin: 0;
 }
 
 .percent {
@@ -231,7 +243,7 @@ img {
   line-height: 40px;
 }
 
-.statistics dd {
+.statistics dt {
   line-height: 18px;
   color: var(--gray-82);
   font-weight: 400;

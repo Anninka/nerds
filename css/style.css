@@ -55,7 +55,7 @@
 }
 
 .page-body {
-  /* min-width: 1240px; */
+  min-width: 1240px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -165,10 +165,6 @@ img {
 }
 
 /* Services */
-
-.services {
-
-}
 
 .services-list {
   list-style: none;
@@ -301,10 +297,14 @@ img {
   border-top: 2px solid var(--gray-7);
   border-bottom: 2px solid var(--gray-7);
   align-items: center;
+  justify-items: center;
 }
 
 /* Contacts & Map */
 
+.contacts {
+  padding: 50px;
+}
 .contacts-caption {
   font-size: 18px;
   line-height: 30px;
@@ -320,8 +320,18 @@ img {
 
 /* Footer */
 
+.main-footer {
+  min-width: 1160px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  padding-top: 70px;
+}
+
 .footer-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-slogan {

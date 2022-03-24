@@ -218,7 +218,7 @@ img {
 
 /* About us */
 
-.advantages-grid {
+.advantages {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -227,7 +227,7 @@ img {
   margin-bottom: 75px;
 }
 
-.advantages {
+.advantages-block {
   color: var(--gray-82);
   font-weight: 400;
   grid-column: 1 / 3;

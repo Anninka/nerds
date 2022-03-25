@@ -92,6 +92,8 @@ img {
 
 .page-header {
   background-color: var(--gray-7);
+  margin: 0;
+  padding: 0;
 }
 
 .main-navigation {
@@ -100,6 +102,7 @@ img {
   display: grid;
   grid-template-columns: 160px 1fr min-content;
   gap: 30px;
+  text-transform: uppercase;
 }
 
 .site-navigation {
@@ -135,6 +138,8 @@ img {
 .slider-title {
   font-size: 55px;
   line-height: 55px;
+  margin-top: 0;
+  padding-top: 78px;
 }
 
 .slider-text {
@@ -347,6 +352,16 @@ img {
 }
 
 /* Catalog page */
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 72px;
+  padding-bottom: 108px;
+}
 
 .filter-title {
   font-size: 18px;

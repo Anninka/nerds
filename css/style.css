@@ -96,17 +96,32 @@ img {
   padding: 0;
 }
 
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-main {
+  background-color: var(--gray-7);
+  margin: 0;
+  padding: 0;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
-  display: grid;
+  display: flex;
+  width: 800px;
+  /* display: grid;
   grid-template-columns: 160px 1fr min-content;
-  gap: 30px;
+  gap: 30px; */
   text-transform: uppercase;
 }
 
 .site-navigation {
   list-style: none;
+  width: 440px;
+  margin-left: 200px;
 }
 
 /* User navigation */

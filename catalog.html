@@ -19,10 +19,10 @@
           <img src="https://via.placeholder.com/160x65" width="160" height="65" alt="Логотип студии дизайна Нёрдс">
         </a>
         <ul class="site-navigation">
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+          <li class="navigation-item"><a href="index.html">Студия</a></li>
+          <li class="navigation-item"><a href="blank.html">Клиенты</a></li>
+          <li class="navigation-item"><a href="">Магазин</a></li>
+          <li class="navigation-item"><a href="blank.html">Контакты</a></li>
         </ul>
       </nav>
       <div class="user-navigation">
@@ -95,18 +95,18 @@
         </form>
       </section>
 
-      <section class="sorting">
+      <section>
         <h2 class="visually-hidden">Сортировка каталогов</h2>
-        <div class="filter">
+        <div class="sorting">
           <p class="filter-sort">Сортировать:</p>
+          <ul class="filter-list">
+            <li><a class="sort-by-price" href="#">По цене</a></li>
+            <li><a class="sort-by-type" href="#">По типу</a></li>
+            <li><a class="sort-by-name" href="#">По названию</a></li>
+            <!-- <li><a class="sort-down" href="#">Направление сортировки вниз</a></li>
+            <li><a class="sort-up" href="#">Направление сортировки вверх</a></li> -->
+          </ul>
         </div>
-        <ul class="filter-list">
-          <li><a class="sort-by-price" href="#">По цене</a></li>
-          <li><a class="sort-by-type" href="#">По типу</a></li>
-          <li><a class="sort-by-name" href="#">По названию</a></li>
-          <li><a class="sort-down" href="#">Направление сортировки вниз</a></li>
-          <li><a class="sort-up" href="#">Направление сортировки вверх</a></li>
-        </ul>
       </section>
 
       <section class="design">
@@ -168,27 +168,27 @@
         </ul>
         <ul class="page-number-list">
           <li>
-            <a class="page active-page">1</a>
+            <a class="pages active-page">1</a>
           </li>
           <li>
-            <a class="page page-button" href="#">2</a>
+            <a class="pages page-button" href="#">2</a>
           </li>
           <li>
-            <a class="page page-button" href="#">3</a>
+            <a class="pages page-button" href="#">3</a>
           </li>
           <li>
-            <a class="page page-next" href="#">Следующая</a>
+            <a class="pages page-next" href="#">Следующая</a>
           </li>
         </ul>
       </section>
     </div>
     <section class="contacts container">
-      <h2>Контакты</h2>
+      <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts-caption">nёrds design studio</p>
       <p class="address">наб. Реки Карповки,<br>
         5 лит П, Санкт-Петербург</p>
       <p><a class="contacts-tel" href="tel:+78005558628">+7 800 555-86-28</a></p>
-      <a class="button button-red" href="blank.html">Напишите нам</a>
+      <a class="button button-write-to-us" href="blank.html">Напишите нам</a>
     </section>
   </main>
 

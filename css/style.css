@@ -310,27 +310,27 @@ padding: 26px 45px 0 0;
 }
 
 .slider-controls button {
+  position: relative;
   padding: 0;
   margin: 0;
   width: 18px;
   height: 18px;
   background-color: var(--basik-white);
-  border: var(--basik-white);
+  border: none;
   border-radius: 50%;
   cursor: pointer;  
 }
 
-.slider-controls .current::after {
+.slider-controls .current::before {
   content:"";
   position: absolute;
-  width: 4px;
-  height: 4px;
-  background-color: none;
-  border:2px solid var(--gray-24);
-  border-radius: 50%; 
-  z-index: 1;
   top: 5px;
   left: 5px;
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
+  border:2px solid var(--gray-24);
+  border-radius: 50%; 
 }
 
 /* Services */

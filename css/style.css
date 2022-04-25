@@ -318,7 +318,7 @@ padding: 26px 45px 0 0;
   background-color: var(--basik-white);
   border: none;
   border-radius: 50%;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .slider-controls .current::before {
@@ -330,7 +330,7 @@ padding: 26px 45px 0 0;
   height: 4px;
   background-color: transparent;
   border:2px solid var(--gray-24);
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 /* Services */
@@ -424,8 +424,8 @@ padding: 26px 45px 0 0;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   border-top: 2px solid var(--gray-7);
-  padding-top: 40px;
-  margin-bottom: 75px;
+  padding-top: 39px;
+  margin-bottom: 50px;
 }
 
 .advantages-block {
@@ -434,36 +434,65 @@ padding: 26px 45px 0 0;
   grid-column: 1 / 3;
 }
 
+.advantages-block p:nth-of-type(2) {
+  margin-bottom: 41px;
+}
+
 .advantages-slogan {
   font-size: 45px;
   line-height: 45px;
   color: var(--basik-black);
   font-weight: 500;
+  margin: 34px 0 33px;
 }
 
 .advantages-caption {
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 23px;
 }
 
 .advantages-list {
   font-weight: 400;
+  list-style: none;
+  margin: 0;
+  padding-left: 37px;
+}
+
+.advantages-list li {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.advantages-list li::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -37px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basik-red);
 }
 
 .statistics {
   width: 360px;
 }
 
+.statistics img {
+  margin-bottom: 14px;
+}
+
 .statistics dl {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px 20px;
+  gap: 14px 3px;
 }
 
 .statistics p {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .statistics dd {
@@ -489,22 +518,73 @@ padding: 26px 45px 0 0;
 
 .clients-list {
   list-style: none;
-  padding: 0;
+  padding: 46px 0 36px;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding-top: 46px;
-  padding-bottom: 44px;
+  grid-template-columns: 280px 300px 300px 280px;
   border-top: 2px solid var(--gray-7);
   border-bottom: 2px solid var(--gray-7);
   align-items: center;
   justify-items: center;
 }
 
+.clients-item {
+  position: relative;
+}
+
+.client-html-academy {
+  margin-left: -18px;
+}
+
+.client-html-academy::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 247px;
+  width: 2px;
+  height: 52px;
+  background-color: var(--gray-7);
+}
+
+.client-barbershop::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 253px;
+  width: 2px;
+  height: 52px;
+  background-color: var(--gray-7);
+}
+
+.client-pink::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 241px;
+  width: 2px;
+  height: 52px;
+  background-color: var(--gray-7);
+}
+
+.client-mishka {
+  margin-left: 22px;
+}
+
 /* Contacts & Map */
 
 .contacts {
-  padding: 50px;
+  padding-top: 80px;
+  position: relative;
+}
+
+.contacts-list {
+  position: absolute;
+  background-color: var(--basik-white);
+  width: 319px;
+  min-height: 308px;
+  box-sizing: border-box;
+  padding: 49px 59px 47px;
+  top: 134px;
 }
 
 .contacts-caption {
@@ -512,6 +592,7 @@ padding: 26px 45px 0 0;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .address,
@@ -519,6 +600,13 @@ padding: 26px 45px 0 0;
   line-height: 18px;
   color: var(--gray-60);
   font-weight: 400;
+}
+
+.map img {
+  height: 416px;
+  width: 1440px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Footer */

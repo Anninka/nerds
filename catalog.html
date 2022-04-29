@@ -36,9 +36,9 @@
       <h1 class="page-title container">Магазин готовых шаблонов</h1>
     </section>
     <div class="content container">
-      <section class="filter">
+      <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+          <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset>
               <legend class="filter-price">Стоимость:</legend>
               <input type="range" id="pricelist" name="pricelist" min="0" max="150000" step="1">
@@ -54,42 +54,46 @@
 
             <fieldset>
               <legend>Сетка:</legend>
-              <label class="filter-points">
-                <input type="radio" name="grid" value="adaptive" checked>
-                Адаптивная
-              </label><br> <!-- Убрать BR -->
-              <label class="filter-points">
-                <input type="radio" name="grid" value="fixed">
-                Фиксированная
-              </label><br>
-              <label class="filter-points">
-                <input type="radio" name="grid" value="rubber">
-                Резиновая
-              </label><br>
+              <ul>
+                <li>
+                  <input class="visually-hidden" type="radio" name="grid" value="adaptive" checked>
+                  <label class="filter-points">Адаптивная</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="radio" name="grid" value="fixed">
+                  <label class="filter-points">Фиксированная</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="radio" name="grid" value="rubber">
+                  <label class="filter-points">Резиновая</label><br>
+                </li>    
+              </ul>
             </fieldset>
 
             <fieldset>
               <legend>Особенности:</legend>
-              <label class="filter-points">
-                <input type="checkbox" name="features" id="slider" checked>
-                Слайдер
-              </label><br>
-              <label class="filter-points">
-                <input type="checkbox" name="features" id="advantage">
-                Блок преимуществ
-              </label><br>
-              <label class="filter-points">
-                <input type="checkbox" name="features" id="news" checked>
-                Новости
-              </label><br>
-              <label class="filter-points">
-                <input type="checkbox" name="features" id="gallery">
-                Галерея
-              </label><br>
-              <label class="filter-points">
-                <input type="checkbox" name="features" id="basket">
-                Корзина
-              </label><br>
+              <ul>
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="features" id="slider" checked>
+                  <label class="filter-points">Слайдер</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="features" id="advantage">
+                  <label class="filter-points">Блок преимуществ</label>
+                  </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="features" id="news" checked>
+                  <label class="filter-points">Новости</label>
+                </li> 
+                <li>
+                  <input class="visually-hidden" type="checkbox" name="features" id="gallery">
+                  <label class="filter-points">Галерея</label>
+                </li>    
+                <li>    
+                  <input class="visually-hidden" type="checkbox" name="features" id="basket">
+                  <label class="filter-points">Корзина</label>
+                </li>
+              </ul> 
             </fieldset>
             <button class="button button-gray" type="submit">Показать</button>
         </form>
@@ -168,10 +172,10 @@
         </ul>
         <ul class="page-number-list">
           <li>
-            <a class="pages active-page">1</a>
+            <a class="pages page-button">1</a>
           </li>
           <li>
-            <a class="pages page-button" href="#">2</a>
+            <a class="pages active-page" href="#">2</a>
           </li>
           <li>
             <a class="pages page-button" href="#">3</a>

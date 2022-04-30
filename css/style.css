@@ -39,10 +39,11 @@
   --gray-12: #e1e1e1;
   --gray-13: #dfdfdf;
   --gray-14: #dbdbdb;
-  --gray-15: #d7dcde;
+  --gray-15: #d7dcdf;
   --gray-16: #d5d5d5;
   --gray-24: #c1c1c1;
   --gray-28: #b4b9bb;
+  --gray-33: #ababab;
   --gray-35: #a6a6a6;
   --gray-60: #666666;
   --gray-70: #4d4d4d;
@@ -190,7 +191,7 @@ padding: 26px 45px 0 0;
 
 .site-navigation span {
   border-bottom: 2px solid var(--basik-red);
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 }
 
 /* Sliders */
@@ -203,6 +204,7 @@ padding: 26px 45px 0 0;
 
 .slider {
   position: relative;
+  margin-bottom: 80px;
 }
 
 .slider-list {
@@ -217,7 +219,6 @@ padding: 26px 45px 0 0;
   position: relative;
   background-color: var(--gray-7);
   color: var(--basik-black);
-  margin-bottom: 80px;
   height: 431px;
 }
 
@@ -276,6 +277,7 @@ padding: 26px 45px 0 0;
   text-transform: uppercase;
   border-radius: 3px;
   padding: 17px 0 15px;
+  cursor: pointer;
 }
 
 .button-know {
@@ -337,10 +339,13 @@ padding: 26px 45px 0 0;
 
 /* Services */
 
+.services {
+  margin-bottom: 80px;
+}
+
 .services-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -519,6 +524,10 @@ padding: 26px 45px 0 0;
 
 /* Clients */
 
+.clients {
+  margin-bottom: 80px;
+}
+
 .clients-list {
   list-style: none;
   padding: 46px 0 36px;
@@ -533,6 +542,19 @@ padding: 26px 45px 0 0;
 
 .clients-item {
   position: relative;
+}
+
+.clients-item img {
+  position: relative;
+  opacity: 0.2;
+}
+
+.clients-item:hover img {
+  opacity: 1;
+}
+
+.clients-item:active img {
+  opacity: 0.1;
 }
 
 .client-html-academy {
@@ -576,7 +598,10 @@ padding: 26px 45px 0 0;
 /* Contacts & Map */
 
 .contacts {
-  padding-top: 80px;
+  margin-bottom: 70px;
+}
+
+.contacts-block {
   position: relative;
 }
 
@@ -586,8 +611,8 @@ padding: 26px 45px 0 0;
   width: 319px;
   min-height: 308px;
   box-sizing: border-box;
-  padding: 49px 59px 47px;
-  top: 134px;
+  padding: 49px 50px 47px;
+  top: 54px;
 }
 
 .contacts-caption {
@@ -595,14 +620,18 @@ padding: 26px 45px 0 0;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 23px;
 }
 
 .address,
-.contacts-tel {
+.contacts-tel a {
   line-height: 18px;
   color: var(--gray-60);
   font-weight: 400;
+}
+
+.contacts-tel {
+  margin-bottom: 33px;
 }
 
 .map img {
@@ -612,14 +641,21 @@ padding: 26px 45px 0 0;
   margin: 0 auto;
 }
 
+.contacts-block::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/map-marker.png);
+  width: 231px;
+  height: 190px;
+  left: 747px;
+  top: 70px;
+}
+
 /* Footer */
 
 .main-footer {
   min-width: 1160px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 40px;
-  padding-top: 70px;
+  display: flex;
 }
 
 .footer-list {
@@ -630,8 +666,19 @@ padding: 26px 45px 0 0;
   margin: 0;
 }
 
-.footer-item {
+.footer-caption {
+  padding-left: 139px;
+}
+
+.footer-list li {
   margin-right: 9px;
+}
+
+.footer-list li:last-child {
+  margin-right: 0;
+}
+
+.social-button {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -642,12 +689,17 @@ padding: 26px 45px 0 0;
   background-color: var(--gray-12);
 }
 
-.footer-item:nth-child(3) {
-  margin-right: 0;
+.social-button:hover {
+  background-color: var(--red-hover);
 }
 
-.footer-item a {
-  line-height: 1px;
+.social-button:active {
+  background-color: var(--red-click);
+  box-shadow: inset 0px 3px 0px rgba(var(--opacity-button-shadow), 0.1);
+}
+
+.social-button:active svg {
+  opacity: 0.3;
 }
 
 .footer-slogan {
@@ -655,7 +707,7 @@ padding: 26px 45px 0 0;
   line-height: 36px;
   font-weight: 700;
   padding: 0;
-  margin: 8px 0 10px;
+  margin: 5px 0 10px;
 }
 
 .footer-text {
@@ -708,6 +760,53 @@ padding: 26px 45px 0 0;
   width: 260px;
 }
 
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  background-color: var(--gray-7);
+  border-radius: 3px;
+  margin-bottom: 14px;
+  padding: 39px 20px 0;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--gray-15);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basik-green);
+}
+
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  background-color: var(--gray-33);
+  border: 8px solid var(--basik-white);
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px rgba(var(--opacity-black), 0.15);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
 .filter ul {
   list-style: none;
   margin: 0;
@@ -728,11 +827,26 @@ padding: 26px 45px 0 0;
   margin: 0 0 15px;
 }
 
-.from-to-filter {
+.price-controls {
   line-height: 22px;
   font-weight: 400;
   color: var(--gray-82);
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: var(--gray-7);
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .filter-points {
@@ -833,24 +947,22 @@ padding: 26px 45px 0 0;
   justify-content: space-between;
 }
 
-.design-info {
-  background-color: var(--gray-7);
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+.design-list svg {
+  display: block;
+  opacity: 0.12;
 }
 
 .design-info {
+  box-sizing: border-box;
+  width: 360px;
+  padding: 26px 80px 44px;
   background-color: var(--gray-7);
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: none;
   align-items: center;
-}
-
-.design-info h3 {
-  margin: 26px 0 12px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .design-title {
@@ -861,6 +973,10 @@ padding: 26px 45px 0 0;
   color: var(--basik-black);
 }
 
+.design-item h3 {
+  margin: 0 0 12px;
+}
+
 .design-title:hover {
   color: var(--basik-red);
 }
@@ -869,22 +985,34 @@ padding: 26px 45px 0 0;
   color: rgba(var(--opacity-black), 0.3);
 }
 
+.design-item {
+  position: relative;
+}
+
 .design-item p {
+  display: inline-block;
   line-height: 18px;
   font-weight: 400;
   color: var(--gray-60);
-  width: 255px;
   text-align: center;
   margin: 0 0 32px;
 }
 
 .button-price {
   background-color: var(--basik-red);
-  margin-bottom: 44px;
+  margin: 0 auto;
   width: 200px;
   line-height: 18px;
   color: var(--basik-white);
   text-transform: uppercase;
+}
+
+.design-item:hover .design-info {
+  display: block;
+}
+
+.design-item:hover svg {
+  opacity: 1;
 }
 
 .button-price:hover {

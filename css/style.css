@@ -645,6 +645,13 @@ padding: 26px 45px 0 0;
   margin-bottom: 33px;
 }
 
+.map iframe {
+  height: 416px;
+  width: 1440px;
+  display: block;
+  margin: 0 auto;
+}
+
 .map img {
   height: 416px;
   width: 1440px;

@@ -786,8 +786,8 @@ padding: 26px 45px 0 0;
 
 .range-controls {
   /* position: relative;
-  height: 41px; */
-  /* background-color: var(--gray-7); */
+  height: 41px;
+  background-color: var(--gray-7); */
   border-radius: 3px;
   padding: 39px 20px;
   margin-bottom: 14px;

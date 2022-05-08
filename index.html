@@ -31,19 +31,19 @@
     </div>
   </header>
 
-  <main class=""> <!-- Не можем добавить класс контейнер, потому что фон серый -->
+  <main>
     <div class="page-main">
       <section class="container slider">
         <h1 class="visually-hidden">Студия дизайна Нёрдс</h1>
         <ul class="slider-list">
-          <li class="slider-item slider-smartphones">
+          <li class="slider-item slider-smartphones slide-current">
             <h2 class="visually-hidden">Слайды</h2>
             <p class="slider-title">Долго, дорого, скрупулезно</p>
             <p class="slider-text">Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного приложения</p>
             <a class="button button-know" href="blank.html">Узнать больше</a>
           </li>
 
-          <li class="slider-item slider-macbook slide-current">
+          <li class="slider-item slider-macbook">
             <h2 class="visually-hidden">Слайды</h2>
             <p class="slider-title">Любим математику
               как никто другой</p>
@@ -61,9 +61,9 @@
         </ul>
 
         <div class="slider-controls">
-          <button type="button" aria-label="Первый слайд"></button>
-          <button type="button" aria-label="Второй слайд"></button>
-          <button class="current" type="button" aria-label="Третий слайд"></button>
+          <button class="button-slide-1 current" type="button" aria-label="Первый слайд"></button>
+          <button class="button-slide-2" type="button" aria-label="Второй слайд"></button>
+          <button class="button-slide-3" type="button" aria-label="Третий слайд"></button>
         </div>
 
       </section>
@@ -186,6 +186,6 @@
       <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
-
+  <script src="js/slider.js"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@
         </ul>
       </nav>
       <div class="user-navigation">
-        <a class="header-basket" href="blank.html">Корзина</a>
+        <a class="header-cart" href="blank.html">Корзина</a>
       </div>
     </div>
   </header>
@@ -186,6 +186,25 @@
       <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="modal-name">Ваше имя:</label>
+        <input id="modal-name" type="text" name="name" placeholder="Имя Фамилия" required>
+      </p>
+      <p>
+        <label for="modal-email">Ваш e-mail:</label>
+        <input id="modal-email" type="email" name="email" placeholder="email@example.com" required>
+      </p>
+      <p>
+        <label for="text">
+          <textarea id="text" name="text" rows="5" cols="83" placeholder="В свободной форме" required></textarea>
+        </label>
+      </p>
+      <button class="button modal-button" type="submit">Отправить</button>
+    </form>
+  </section>
   <script src="js/slider.js"></script>
 </body>
 </html>

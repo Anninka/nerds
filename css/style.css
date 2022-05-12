@@ -283,6 +283,8 @@ padding: 26px 45px 0 0;
   border-radius: 3px;
   padding: 17px 0 15px;
   cursor: pointer;
+  font-weight: 500;
+  border: none;
 }
 
 .button-know {
@@ -786,7 +788,7 @@ padding: 26px 45px 0 0;
 
 .range-controls {
   border-radius: 3px;
-  padding: 39px 20px 39px 20px;
+  padding: 39px 20px;
   margin-bottom: 14px;
 }
 
@@ -1204,6 +1206,33 @@ padding: 26px 45px 0 0;
   box-shadow: inset 0px 3px 0px rgba(var(--opacity-button-shadow), 0.1);
 }
 
+/* Modal Write to us */
 
+.modal h2 {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+}
 
+.modal label {
+  line-height: 18px;
+  font-weight: 500;
+}
 
+.modal-button {
+  background-color: var(--basik-red);
+  min-width: 260px;
+}
+
+.write-us input[type="text"],
+.write-us input[type="email"],
+.write-us textarea {
+  color: var(--gray-73);
+  opacity: 0.5;
+  font-style: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  border: 2px solid var(--gray-15);
+  border-radius: 3px;
+  resize: none;
+}

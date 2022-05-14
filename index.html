@@ -186,9 +186,9 @@
       <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
-  <section class="modal">
+  <section class="modal modal-show">
     <h2>Напишите нам</h2>
-    <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="modal-name">Ваше имя:</label>
         <input id="modal-name" type="text" name="name" placeholder="Имя Фамилия" required>
@@ -198,9 +198,8 @@
         <input id="modal-email" type="email" name="email" placeholder="email@example.com" required>
       </p>
       <p>
-        <label for="text">
-          <textarea id="text" name="text" rows="5" cols="83" placeholder="В свободной форме" required></textarea>
-        </label>
+        <label for="text">Текст письма:</label>
+        <textarea id="text" name="text" rows="5" cols="83" placeholder="В свободной форме" required></textarea>
       </p>
       <button class="button modal-button" type="submit">Отправить</button>
     </form>

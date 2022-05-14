@@ -1208,15 +1208,36 @@ padding: 26px 45px 0 0;
 
 /* Modal Write to us */
 
+.modal {
+  width: 760px;
+  height: 443px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  padding: 63px 100px 84px;
+  background-color: var(--basik-white);
+  box-shadow: 0px 20px 40px rgba(var(--opacity-black), 0.4);
+}
+
+.modal-show {
+  display: block;
+}
+
 .modal h2 {
   font-size: 45px;
   line-height: 53px;
   font-weight: 700;
+  padding: 0 0 20px;
+  margin: 0;
 }
 
 .modal label {
+  display: block;
   line-height: 18px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .modal-button {
@@ -1224,9 +1245,9 @@ padding: 26px 45px 0 0;
   min-width: 260px;
 }
 
-.write-us input[type="text"],
-.write-us input[type="email"],
-.write-us textarea {
+.modal-form input[type="text"],
+.modal-form input[type="email"],
+.modal-form textarea {
   color: var(--gray-73);
   opacity: 0.5;
   font-style: 16px;
@@ -1235,4 +1256,23 @@ padding: 26px 45px 0 0;
   border: 2px solid var(--gray-15);
   border-radius: 3px;
   resize: none;
+  box-sizing: border-box;
+  width: 360px;
+  padding: 13px 16px;
+}
+
+.modal-form input,
+.modal-form textarea {
+  display: block;
+}
+
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-form textarea {
+  width: 100%;
+  margin-bottom: 30px;
 }

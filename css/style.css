@@ -1240,11 +1240,6 @@ padding: 26px 45px 0 0;
   margin-bottom: 10px;
 }
 
-.modal-button {
-  background-color: var(--basik-red);
-  min-width: 260px;
-}
-
 .modal-form input[type="text"],
 .modal-form input[type="email"],
 .modal-form textarea {
@@ -1275,4 +1270,44 @@ padding: 26px 45px 0 0;
 .modal-form textarea {
   width: 100%;
   margin-bottom: 30px;
+}
+
+.modal-button {
+  background-color: var(--basik-red);
+  min-width: 260px;
+}
+
+.modal-button:hover {
+  background-color: var(--red-hover);
+}
+
+.modal-button:active {
+  background-color: var(--red-click);
+  color: rgba(var(--opacity-white), 0.3);
+  box-shadow: inset 0px 3px 0px rgba(var(--opacity-button-shadow), 0.1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 77px;
+  right: 91px;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.modal-close::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icons/close-cross.svg);
+  width: 21px;
+  height: 21px;
+  top: 0;
+  right: 0;
+}
+
+.modal-close::before:hover {
+  opacity: 0.3;
 }

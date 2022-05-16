@@ -134,7 +134,7 @@
       <section class="design">
         <h2 class="visually-hidden">Каталог макетов</h2>
         <ul class="design-list">
-          <li class="design-item">
+          <li class="design-item"><a class="test" href="#">
             <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
             </svg>
@@ -144,7 +144,7 @@
               <p>Информационный сайт для&nbsp;туристов</p>
               <a class="button button-price" href="#">9900 р</a>
             </div>
-          </li>
+          </a></li>
           <li class="design-item">
             <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
@@ -228,7 +228,7 @@
           <p class="address">наб. Реки Карповки,<br>
           5 лит П, Санкт-Петербург</p>
           <p class="contacts-tel"><a href="tel:+78005558628">+7 800 555-86-28</a></p>
-          <a class="button button-write-to-us" href="#">Напишите нам</a>
+          <a class="button button-feedback" href="">Напишите нам</a>
         </div>
       </div>
       <div class="map">
@@ -270,7 +270,27 @@
       <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="modal-name">Ваше имя:</label>
+        <input id="modal-name" type="text" name="name" placeholder="Имя Фамилия" required>
+      </p>
+      <p>
+        <label for="modal-email">Ваш e-mail:</label>
+        <input id="modal-email" type="email" name="email" placeholder="email@example.com" required>
+      </p>
+      <p>
+        <label for="text">Текст письма:</label>
+        <textarea id="text" name="text" rows="5" cols="83" placeholder="В свободной форме" required></textarea>
+      </p>
+      <button class="button modal-button" type="submit">Отправить</button>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </form>
+  </section>
   <script src="js/nouislider.min.js"></script>
   <script src="js/range-slider.js"></script>
+  <script src="js/login.js"></script>
 </body>
 </html>

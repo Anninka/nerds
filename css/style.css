@@ -125,10 +125,13 @@ img {
   width: 160px;
 }
 
+.header-logo {
+  margin-top: 49px;
+}
+
 .header-logo img {
   width: 160px;
   height: 65px;
-  padding-top: 49px;
 }
 
 .site-navigation {
@@ -153,18 +156,20 @@ padding: 26px 45px 0 0;
 
 .user-navigation {
   max-width: 150px;
+  margin-top: 75px;
+  position: relative;
 }
 
 .header-cart {
   display: block;
   position: relative;
-  padding: 75px 0 0 50px;
+  padding-left: 50px;
 }
 
-.header-cart::before {
+.user-navigation::before {
   content: "";
   position: absolute;
-  top: 82px;
+  top: 7px;
   left: 10px;
   width: 15px;
   height: 15px;
@@ -293,19 +298,19 @@ padding: 26px 45px 0 0;
   margin: 0;
 }
 
-.button-write-to-us {
+.button-feedback {
   background-color: var(--basik-red);
   width: 219px;
 }
 
-.button-write-to-us:hover,
+.button-feedback:hover,
 .button-know:hover,
-.button-write-to-us:focus,
+.button-feedback:focus,
 .button-know:focus {
   background-color: var(--red-hover);
 }
 
-.button-write-to-us:active,
+.button-feedback:active,
 .button-know:active {
   background-color: var(--red-click);
   color: rgba(var(--opacity-white), 0.3);
@@ -1023,7 +1028,7 @@ padding: 26px 45px 0 0;
 }
 
 .sort-down {
-  padding: 0 18px 0 21px;
+  margin: 0 18px 0 21px;
 }
 
 .sort-direction-active {
@@ -1125,22 +1130,23 @@ padding: 26px 45px 0 0;
   text-transform: uppercase;
 }
 
+.design-item:hover svg,
+.test:focus svg {
+  opacity: 1;
+}
+
+.design-item:hover img,
+.test:focus img {
+  box-shadow: 0px 6px 15px rgba(var(--opacity-black), 0.25);
+}
+
 .design-item:hover .design-info,
-.design-item:focus .design-info {
+.test:focus .design-info {
   display: block;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.design-item:hover svg,
-.design-item:focus svg {
-  opacity: 1;
-}
-
-.design-item:hover img,
-.design-item:focus img {
-  box-shadow: 0px 6px 15px rgba(var(--opacity-black), 0.25);
-}
 
 .button-price:hover,
 .button-price:focus {
@@ -1219,6 +1225,7 @@ padding: 26px 45px 0 0;
   padding: 63px 100px 84px;
   background-color: var(--basik-white);
   box-shadow: 0px 20px 40px rgba(var(--opacity-black), 0.4);
+  display: none;
 }
 
 .modal-show {

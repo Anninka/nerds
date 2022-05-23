@@ -4,7 +4,7 @@ if (rangeControls) {
 noUiSlider.create(rangeControls, {
   start: [0, 150000],
   connect: true,
-  step: 1,
+  step: 100,
   range: {
       'min': 0,
       'max': 150000

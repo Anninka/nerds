@@ -566,12 +566,12 @@ padding: 26px 45px 0 0;
   opacity: 0.2;
 }
 
-.clients-item:hover img,
-.clients-item:focus img {
+.clients-link:hover img,
+.clients-link:focus img {
   opacity: 1;
 }
 
-.clients-item:active img {
+.clients-link:active img {
   opacity: 0.1;
 }
 
@@ -1218,10 +1218,11 @@ padding: 26px 45px 0 0;
   width: 760px;
   height: 443px;
   position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   padding: 63px 100px 84px;
   background-color: var(--basik-white);
   box-shadow: 0px 20px 40px rgba(var(--opacity-black), 0.4);
@@ -1230,6 +1231,11 @@ padding: 26px 45px 0 0;
 
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal h2 {
@@ -1247,11 +1253,7 @@ padding: 26px 45px 0 0;
   margin-bottom: 10px;
 }
 
-.modal-form input[type="text"],
-.modal-form input[type="email"],
-.modal-form textarea {
-  color: var(--gray-73);
-  opacity: 0.5;
+.modal-input {
   font-style: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1268,10 +1270,54 @@ padding: 26px 45px 0 0;
   display: block;
 }
 
+.modal-input:hover {
+  border: 2px solid var(--gray-28);
+}
+
+.modal-input:focus {
+  border: 2px solid var(--basik-black);
+}
+
 .modal-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--gray-73);
+  opacity: 0.5;
+}
+
+input:-moz-placeholder {
+  color: var(--gray-73);
+  opacity: 0.5;
+}
+
+textarea::-webkit-input-placeholder {
+  color: var(--gray-73);
+  opacity: 0.5;
+}
+
+textarea:-moz-placeholder {
+  color: var(--gray-73);
+  opacity: 0.5;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:focus:-moz-placeholder {
+  opacity: 1;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+textarea:focus:-moz-placeholder {
+  opacity: 1;
 }
 
 .modal-form textarea {
@@ -1315,6 +1361,59 @@ padding: 26px 45px 0 0;
   right: 0;
 }
 
-.modal-close::before:hover {
+.modal-close {
   opacity: 0.3;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
+.modal-input:invalid {
+  color: red;
+  border: 2px solid var(--basik-red);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

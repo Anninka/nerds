@@ -37,7 +37,7 @@ modalForm.addEventListener("submit", function (evt) {
 if (!modalName.value || !modalEmail.value || !modalText.value) {
   evt.preventDefault();
   modal.classList.remove("modal-error");
-  modal.offsetWidth = modal.offsetWidth;
+  modal.offsetWidth;
   modal.classList.add("modal-error");
   } else {
     if (isStorageSupport) {

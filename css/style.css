@@ -134,6 +134,14 @@ img {
   height: 65px;
 }
 
+.not-main:hover {
+  opacity: 0.7;
+}
+
+.not-main:active {
+  opacity: 0.3;
+}
+
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
